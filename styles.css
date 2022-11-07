@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+main {
+    display: flex;
+}
+.store-list {
+    width: 25%;
+    height: 100vh;
+    overflow: auto;
+    background: whitesmoke;
+}
+#map {
+    height: 100vh;
+    width: 75%;
+}
+.store-list .heading {
+    background: #018d36;
+    color: #fff;
+}
+.store-list .heading h2 {
+    padding: 1rem;
+}
+::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    border-left: 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+::-webkit-scrollbar-thumb {
+    background: #018d36;
+    border-radius: 0;
+}
+.store-list ul.list {
+    padding: 0 1rem;
+    list-style-type: none;
+}
+.store-list .shop-item {
+    margin: 1rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 1rem;
+}
+.store-list li:last-child .shop-item {
+    border: none;
+}
+.store-list .shop-item a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #018d36;
+    font-weight: 700;
+}
+.store-list .shop-item p {
+    font-size: 14px;
+    color: #404040;
+}
+.leaflet-popup-content-wrapper {
+    padding: 0;
+    overflow: hidden;
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content {
+    margin: 0;
+}
+.leaflet-popup-content-wrapper h4 {
+    padding: 16px;
+    background: #018d36;
+    color: #fff;
+    font-size: 16px;
+}
+.leaflet-popup-content-wrapper p {
+    padding: 0 16px;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content .phone-number {
+    padding: 16px;
+    padding-top: 0;
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content .phone-number a {
+    color: #018d36;
+    font-size: 14px;
+}
+
+@media screen and (max-width:500px){
+    .heading h2{
+        font-size: 15px;
+    }
+    .leaflet-popup-content-wrapper {
+        width: 220px;
+    }
+    .store-list .shop-item a {
+        font-size: 13px;
+    }
+    .store-list .shop-item p {
+        font-size: 10px;
+    }
+    .leaflet-popup-content-wrapper h4 {
+        font-size: 13px;
+    }
+    .leaflet-popup-content-wrapper p {
+        font-size: 11px;
+    }
+    .leaflet-popup-content-wrapper .leaflet-popup-content .phone-number a {
+        font-size: 12px;
+    }
+}
